@@ -5,7 +5,7 @@ from airflow.utils.dates import days_ago
 from airflow.providers.apache.spark.operators.spark_submit import SparkSubmitOperator 
 
 dag_conf = DAG(
-    dag_id='airflow_spark',schedule_interval= '0 0 0 0 *' , start_date=airflow.utils.dates.days_ago(2)
+    dag_id='airflow_spark'
 
 
 )
