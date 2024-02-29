@@ -4,10 +4,6 @@ from airflow.utils.dates import days_ago
 #from airflow.contrib.operators.spark_submit_operator import SparkSubmitOperator
 from airflow.providers.apache.spark.operators.spark_submit import SparkSubmitOperator 
 
-import time
-print("sleeping")
-time.sleep(300)
-print("wakeup")
 
 try:
   dag_conf = DAG(dag_id='airflow_spark')
