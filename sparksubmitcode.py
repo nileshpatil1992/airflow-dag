@@ -57,11 +57,11 @@ except Exception as error:
   print("An exception occurred:", error)
   import time
   print("sleeping except")
-  time.sleep(10)
+  time.sleep(300)
   print("wakeup except")
 
 import time
 print("sleeping")
-time.sleep(10)
+time.sleep(300)
 print("wakeup")
 #dbutils.fs.ls(f"abfss://{container}@{storageAccount}.dfs.core.windows.net/")
