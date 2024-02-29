@@ -53,3 +53,4 @@ with airflow.DAG('dag_teste_spark_documento_vencido_v01',
         task_id='elt_documento_pagar_spark',
         python_callable=processo_etl_spark
     )
+    task_elt_documento_pagar
