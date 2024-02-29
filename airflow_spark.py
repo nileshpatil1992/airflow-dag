@@ -11,16 +11,6 @@ try:
 except Exception as error:
   print("An exception occurred")
   print("An exception occurred:", error)
-  import time
-  print("sleeping")
-  time.sleep(300)
-  print("wakeup")
 
 if  __name__=='__main__':
     dag_conf.cli()
-
-
-import time
-print("sleeping")
-time.sleep(300)
-print("wakeup")
