@@ -9,7 +9,7 @@ try:
 
   #sp=racwdli&st=2024-02-05T15:28:30Z&se=2024-02-28T23:28:30Z&spr=https&sv=2022-11-02&sr=c&sig=7SdkUPorz4B8PWKKgWdYQDXg3zHILhbcGoULLVVgRqM%3D
   #https://pocstorageforkazhuga.blob.core.windows.net/data?sp=racwdli&st=2024-02-05T15:28:30Z&se=2024-02-28T23:28:30Z&spr=https&sv=2022-11-02&sr=c&sig=7SdkUPorz4B8PWKKgWdYQDXg3zHILhbcGoULLVVgRqM%3D
-  spark=SparkSession.builder.appName("test_airflow").master("local").config("spark.jars", "/home/nilesh/project/airflow/src/jars/org.apache.hadoop:hadoop-azure:3.2.4,/home/nilesh/project/airflow/src/jars/azure-storage-8.5.0.jar").getOrCreate()
+  spark=SparkSession.builder.appName("test_airflow").config("spark.jars", "/home/nilesh/project/airflow/src/jars/org.apache.hadoop:hadoop-azure:3.2.4,/home/nilesh/project/airflow/src/jars/azure-storage-8.5.0.jar").getOrCreate()
 
   storageAccount='pocstorageforkazhuga'
   container='data'
