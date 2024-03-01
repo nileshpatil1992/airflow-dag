@@ -6,7 +6,7 @@ from airflow.providers.apache.spark.operators.spark_submit import SparkSubmitOpe
 
 
 
-dag_conf = DAG(dag_id='airflow_spark')
+dag_conf = DAG(dag_id='airflow_spark_1')
 spark_submit_local=SparkSubmitOperator(task_id='sparksubmitjobs',application_file='sparksubmitcode.py',kubernetes_conn_id='myk8s',namespace="spark-jobs",api_group="sparkoperator.k8s.io",
        api_version="v1beta2",do_xcom_push=True,dag=dag_conf)
 spark_submit_local
